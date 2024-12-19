@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toss Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Carme&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+</head>
+<style>
+    *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+}
+body{
+    background-color: black;
+    font-family: "Anton SC", serif;
+    font-style: normal;
+    color: white;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 10% auto;
+}
+.content p
+{
+    font-size: 3rem;
+    text-decoration: underline;
+}
+.content h1{
+    font-size: 7.5rem;
+    color:red;
+}
+.content button{
+    width: 20%;
+    height: 2.5rem;
+    font-size: 2rem;
+    box-shadow: 0px 0px 5px 3px solid white;
+    background: white;
+    border-radius: 5px;
+}
+@media screen and (max-width:500px) {
+    .content p{
+        font-size: 1.5rem;
+    }
+    .content button{
+        width: 40%;
+    }
+}
+</style>
+<body>
+<div class="content">
+    <p>Flip the coin by prressing Toss</p>
+    <h1 id="result">- - - </h1>
+    <button class="toss">Toss</button>
+</div>
+</body>
+</html>
